@@ -1,7 +1,5 @@
 puts "Entre un nombre"
 print "> "
-nb = gets.chomp
+nb = gets.chomp.to_i
 text = "Salut, ça farte ?"
-nb.to_i.times do
-	puts text
-end
+nb.times { puts text }
