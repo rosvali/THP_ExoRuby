@@ -1,8 +1,2 @@
-tab = []
-50.times do |i|
-	if i < 9
-		tab[i] = "jean.dupont.0#{i + 1}@email.fr"
-	else
-		tab[i] = "jean.dupont.#{i + 1}@email.fr"
-	end
-end
+tab = (0..49).to_a
+tab.map! { |i| "jean.dupont.#{sprintf("%02d", i + 1)}@email.fr" }
